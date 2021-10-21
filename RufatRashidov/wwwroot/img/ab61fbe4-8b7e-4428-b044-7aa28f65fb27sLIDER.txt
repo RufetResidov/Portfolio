@@ -1,0 +1,124 @@
+1)online chat resposivlikde problem yaradir?
+2)error page qosmaq? 404 notfound,
+7)single page qramla hesablamaq mehsul qramla almaq
+8)Social melumat
+9)+
+10)Discount olan mehsullari nece edeciyik index sehifesinde endirimli mehsullar ?
+11)IsActive paylas edende paylasilmalidi calismir ?
+
+13)sifarisi catdirilma delivery pulu cixma falan?
+---------------------
+
+#FF7004; red
+#11cf3d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.webfulcreations.com/themes/items/?theme=Education-WP
+https://preview.themeforest.net/item/edumen-education-html-template/full_screen_preview/33080684?_ga=2.54534249.352015107.1631018771-466082456.1631018334
+https://preview.themeforest.net/item/zoomy-education-html-template/full_screen_preview/33286227?_ga=2.169927337.864466872.1631018350-466082456.1631018334
+https://themepure.net/template/educal/educal/course-grid.html
+http://keenitsolutions.com/products/html/edulearn/edulearn-demo/index2.html
+
+
+
+
+
+http://preview.themeforest.net/item/littledino-modern-kids-wordpress-theme/full_screen_preview/24525614?_ga=2.139010810.856822774.1631093499-466082456.1631018334
+
+https://wordpress.iqonic.design/epy_wp/home-2/ --Human photo title social falan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+salam necesen ne var ne yox
+*10.08.2021*
+SHOP SEHIFESINDE 9 DENE GETIRMEK
+backgorund herf rengi deyisende nece olacaq ?
+
+
+*09.06.2021
+
+checkout wislhslit ? tableler
+
+single page islemir
+inpute deyer oturmek
+csss intelitence
+
+114f18e89e72117b78dd5935fcd01529931fa5e4 
+
+Backend suallar------------
+Blog duzdumu > serviceindex.cshtml % intnen yazmaqcshtml sehifelerinde yuxarida Titllar
+pagination nece olacaq ?
+back text colorlari deyisecek
+musteri melumatlari 
+
+telefon whatsapp elaqe nece olacaq ?
+
+
+30.07.2021--NotFound
+
+
+contact/tel/email/inst link nomre ad 
+aboutun icini doldurmaq
+
+
+
+
+
+
+
+
+02.08.2021
+our products ajax hissesi ? nece olur
+checkout product -+ say vermek sag terefde qiymetin deyismeyi
+cart bilgileri ? nece olacaq ?
+hover image olanda plugin ? zoom olmaga 
+0 dan add edende add olmur ? add-to-cart
+checkout da sifreni kodu adi boyuk kicik yazmaq
+injectleri kececem dediz ?{
+
+orderInfo hissesi anlamadiq

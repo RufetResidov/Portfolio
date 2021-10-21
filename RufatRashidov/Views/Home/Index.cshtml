@@ -1,0 +1,309 @@
+﻿
+@model HomeVm
+<!--  start page loader  -->
+<div id="preloader">
+    <div class="scroll-static"></div>
+</div>
+<!--  end page loader  -->
+<!-- begin of main-wrapper -->
+<div class="main-wrapper">
+    <!-- begin of navbar -->
+    <div class="nav-bar">
+        <!-- begin of scroll-indicator -->
+        <div class="scroll-indicator"></div>
+        <nav>
+            <ul id="menu-list">
+                <li class="nav-item">
+                    <a class="active nav-link" href="#body" data-text="Home">
+                        <span>01</span>Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" data-text="About">
+                        <span>02</span>About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services" data-text="Services">
+                        <span>03</span>Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills" data-text="Skills">
+                        <span>04</span>Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education" data-text="Education">
+                        <span>05</span>Education
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience" data-text="Experience">
+                        <span>06</span>Experience
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#works" data-text="Projects">
+                        <span>07</span>Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" data-text="Contact">
+                        <span>08</span>Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-footer">
+            <p class="nav-copyright">&copy; Copyright 2019<br>All rights reserved</p>
+        </div>
+    </div>
+    <!-- end of navbar -->
+    <!-- begin of main-content -->
+    <div class="main-content">
+        <!-- begin of header -->
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="/">Rufat Rashidov</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="default-btn menu-btn">
+                            <i class="ti-menu"></i>
+                            <i ass="ti-close"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- begin of home-wrapper -->
+        <div class="home-wrapper">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-sm-5">
+                        <div class="hero-img wow fadeIn" data-wow-delay=".2s">
+                            <div class="shape"></div>
+                            <!-- hero image -->
+                            <img class="img-fluid" src="@Model.Home.Photo" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-7">
+                        <div class="hero-content">
+                            <h2 class="intro-name">
+                                <span class="wow slideInLeft">@Model.Home.Header</span>
+                                <span class="wow slideInLeft" data-wow-delay=".2s">@Model.Home.Name</span>
+                            </h2>
+                            <p>
+                                <span class="wow slideInLeft" data-wow-delay=".5s">@Model.Home.WebArea</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of home-wrapper -->
+        <!-- begin of about-wrapper -->
+        <div id="about" class="wrapper about-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">About Me</h3>
+
+                        <h4 class="about-sub-heading">@Model.About.WebArea</h4>
+                        <p class="about-text">@Model.About.Title</p>
+                        <!-- social profile links -->
+                        <div class="social-links">
+                            <span>I am avilable on</span>
+                            <ul>
+                                <li><a target="_blank" href="https://github.com/RufetResidov" data-text="gt"><i class="ti-github"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/ruffryderr/" data-text="ig"><i class="ti-instagram"></i></a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/rufet-residov-a33603108/" data-text="in"><i class="ti-linkedin"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/Rufet.Residov/" data-text="fa"><i class="ti-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of about-wrapper -->
+        <!-- begin of service-wrapper -->
+        <div id="services" class="wrapper service-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Services</h3>
+                    </div>
+                    @foreach (var service in Model.Services)
+                    {
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <!-- service item -->
+            <div class="service-item">
+                <span class="@service.Icon"></span>
+                <h4>@service.IconTitle</h4>
+                <p>@service.Title</p>
+            </div>
+        </div>}
+                </div>
+            </div>
+        </div>
+        <!-- end of service-wrapper -->
+        <!-- begin of skills-wrapper -->
+        <div id="skills" class="wrapper skills-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 margin-on-md">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Tools Skills</h3>
+                        @foreach (var tlSkill in Model.ToolSkill)
+                        {<!-- skill item -->
+                                            <div class="skill-item">
+                                                <p>@tlSkill.ProgramName</p>
+                                                <div class="skill-wrap">
+                                                    <div class="skill-percent wow slideInLeft" style="width:@tlSkill.Price%"></div>
+                                                </div>
+                                            </div>}
+                    </div>
+                    <div class="col-md-6">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Coding Skills</h3>
+                        @foreach (var coding in Model.CodingSkill)
+                        {<!-- skill item -->
+                                            <div class="skill-item">
+                                                <p>@coding.ProgramName</p>
+                                                <div class="skill-wrap">
+                                                    <div class="skill-percent wow slideInLeft" style="width:@coding.Price%"></div>
+                                                </div>
+                                            </div>}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of skills-wrapper -->
+        <!-- begin of education-wrapper -->
+        <div id="education" class="wrapper education-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Education</h3>
+                    </div>
+                    @foreach (var education in Model.Educations)
+                    {
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="education-single">
+                <h4 class="course-name">@education.Name</h4>
+                <p class="institute">@education.EducationName</p>
+                <p class="mute-text">Session : @education.Session</p>
+            </div>
+        </div>}
+                </div>
+            </div>
+        </div>
+        <!-- end of education-wrapper -->
+        <!-- begin of experience-wrapper -->
+        <div id="experience" class="wrapper experience-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Experience</h3>
+                    </div>
+                    @foreach (var experience in Model.Experiences)
+                    {
+        <div class="col-md-6">
+            <div class="experience-single">
+                <h4 class="company">@experience.WorkHouse</h4>
+                <p class="position-name">@experience.WorkArea</p>
+                <p class="mute-text">@experience.WorkTime</p>
+                <p class="company-info">@experience.Title</p>
+            </div>
+        </div>}
+                </div>
+            </div>
+        </div>
+        <!-- end of experience-wrapper -->
+        <!-- begin of works-wrapper -->
+        <div id="works" class="wrapper works-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- section heading -->
+                        <h3 class="wrapper-heading">Recent Works</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- work filter buttons -->
+                        <div class="filter-buttons">
+                            <button class="active" data-filter="*">Everything</button>
+                            @foreach (var cat in Model.Categories)
+                            {
+                <button data-filter=".@cat.Name">@cat.Name</button>}
+                        </div>
+                    </div>
+                </div>
+                <div class="projectList row zoom-gallery">
+                    @foreach (var pro in Model.Projects)
+                    {<!-- work single item  -->
+                                        <div class="col-lg-4 col-md-6 col-sm-6 @pro.Category.Name">
+                                            <div class="work-single-item">
+                                                <a class="zoom-image" href="@pro.Photo">
+                                                    <div class="tilt-wrap">
+                                                        <img class="img-fluid" src="@pro.Photo" alt="">
+                                                        <h6>@pro.PhotoTitle</h6>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>}
+
+                </div>
+            </div>
+        </div>
+        <!-- end of works-wrapper -->
+        <!-- begin of contact-wrapper -->
+        <div id="contact" class="wrapper contact-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="contact-details">
+                            <h4>Get in Touch</h4>
+                            <p>@Model.Contact.Title</p>
+                        </div>
+                        <div class="contact-info">
+                            <p><span class="ti-email"></span>@Model.Contact.Mail</p>
+                            <p><span class="ti-mobile"></span>@Model.Contact.Phone</p>
+                            <p><span class="ti-home"></span>@Model.Contact.Adress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of contact-wrapper -->
+        <!-- begin of contact-wrapper -->
+        <footer class="wrapper footer-wrapper">
+            <div class="container-fluid">
+                <div class="col-md-12 text-center">
+                    <div class="footer-social">
+                        <a href="https://github.com/RufetResidov" target="_blank">Github</a>
+                        <a href="https://www.instagram.com/ruffryderr/" target="_blank">Instagram</a>
+                        <a href="https://www.linkedin.com/in/rufet-residov-a33603108/" target="_blank">Linkedin</a>
+                        <a href="https://www.facebook.com/Rufet.Residov/" target="_blank">Facebook</a>
+                    </div>
+                    <p class="footer-copyright">© Copyright 2019 - <a href="https://github.com/RufetResidov" target="_blank">RufatRashidov</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- end of contact-wrapper -->
+        <!-- scroll-to top -->
+        <a class="default-btn scroll-to-top" href="#body"><span class="ti-angle-up "></span></a>
+
+    </div>
+    <!-- end of main-content -->
+</div>
+<!-- end of main-wrapper -->

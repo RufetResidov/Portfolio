@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Rufat Rashidov-CV">
+    <meta name="keywords" content="Rufat Rashidov-CV,Portfolio">
+    <meta name="author" content="ixTheme">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Rufat Rashidov-Portfolio</title>
+    <!-- Favicon -->
+    <link href="~/front/img/favicon.png" type="image/png" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- All CSS -->
+    <link href="~/front/css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="~/front/css/main.css" rel="stylesheet" type="text/css">
+    <link href="~/front/css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body" data-spy="scroll" data-target="#menu-list">
+
+    @RenderBody()
+
+    <!-- All JS -->
+    <script src="~/front/js/jquery-3.3.1.min.js"></script>
+    <script src="~/front/js/plugins.js"></script>
+    <script src="~/front/js/main.js"></script>
+    <script src="~/front/js/ajax-mail.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+
+</html>
